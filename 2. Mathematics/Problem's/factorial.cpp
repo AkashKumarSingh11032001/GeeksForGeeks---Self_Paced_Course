@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int fact(int x){
+int fact(int x)
+{
     int res = 1;
     for (int i = 2; i <= x; i++)
     {
@@ -12,7 +13,6 @@ int fact(int x){
         res = res * i;
     }
     return res;
-    
 }
 int main()
 {
