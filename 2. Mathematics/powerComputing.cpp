@@ -4,11 +4,11 @@
 
 using namespace std;
 
-int powerComputing(int x, int n)
+long long int powerComputing(long long int x, long long int n)
 {
     if (n == 0)
         return 1;
-    int temp = pow(x, n / 2);
+    long long int temp = pow(x, n / 2);
     temp = temp * temp;
     if (n % 2 == 0)
         return temp;
@@ -17,6 +17,6 @@ int powerComputing(int x, int n)
 }
 int main()
 {
-    cout << powerComputing(2, 5);
+    cout << powerComputing(2, 50);
     return 0;
 }
