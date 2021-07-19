@@ -24,15 +24,24 @@ void divisorOfNumber(int n)
         }
     }
 }
-void seiveOfErathemis(int n)
+int seiveOfErathemis(int n)
 {
     vector<bool> checkPrime(n + 1, true);
+    int count = 0;
     for (int i = 2; i <= n; i++)
     {
         /* code */
+        
         if (checkPrime[i])
         {
-            cout << i << " ";
+            //cout << i << " ";
+
+            //******
+            if (i*i <= n){
+                count++;
+            }
+            //******
+
             for (int j = i * i; j <= n; j = j + i)
             {
                 /* code */
@@ -40,30 +49,15 @@ void seiveOfErathemis(int n)
             }
         }
     }
+    return count;
 }
 int main()
 {
-    int n;
-    cin >> n;
-
-    int arr[n],num=1;
-    for (int i = 0; i < n; i++)
-    {
-        /* code */
-        arr[i] = num;
-        num++;
-    }
     
-    for (int i = 0; i < n; i++)
-    {
-        /* code */
-        // cout << arr[i] << " ";
-        // cout << endl;
-        cout << i+1 <<": " ;
-        seiveOfErathemis(arr[i]);
-        cout <<endl;
+    cout << seiveOfErathemis(10);
 
-    }
+
+   
     
     return 0;
 }
