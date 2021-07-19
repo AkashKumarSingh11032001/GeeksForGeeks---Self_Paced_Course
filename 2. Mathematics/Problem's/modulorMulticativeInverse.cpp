@@ -12,23 +12,19 @@ using namespace std;
 //         return findgcd(m,a%m);
 //     }
 // }
-int inverse(int a, int m){
+int inverse(int a, int m)
+{
 
-    
-        for (int i = 1; i < m; ++i)
-        {
-            /* code */
-            if (((a%m) * (i%m)%m) == 1)
-                return i;
-        }
-        
-    
-
-
+    for (int i = 1; i < m; ++i)
+    {
+        /* code */
+        if (((a % m) * (i % m) % m) == 1)
+            return i;
+    }
 }
 
 int main()
 {
-    cout << inverse(3,11);
+    cout << inverse(3, 11);
     return 0;
 }
