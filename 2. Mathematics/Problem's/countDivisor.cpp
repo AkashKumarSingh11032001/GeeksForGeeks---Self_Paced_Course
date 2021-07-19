@@ -31,13 +31,14 @@ int seiveOfErathemis(int n)
     for (int i = 2; i <= n; i++)
     {
         /* code */
-        
+
         if (checkPrime[i])
         {
             //cout << i << " ";
 
             //******
-            if (i*i <= n){
+            if (i * i <= n)
+            {
                 count++;
             }
             //******
@@ -53,11 +54,8 @@ int seiveOfErathemis(int n)
 }
 int main()
 {
-    
+
     cout << seiveOfErathemis(10);
 
-
-   
-    
     return 0;
 }
