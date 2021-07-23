@@ -17,12 +17,12 @@ int firstSetBit_1(int n)
         counter++;
     }
 }
-int firstSetBit_2(int n){
-    return log(n & -(n-1));
+unsigned int firstSetBit_2(int n){
+    return log2(n & -n) + 1;
 }
 int main()
 {
-    cout << firstSetBit_1(12);
+    cout << firstSetBit_1(12) <<endl;
     cout << firstSetBit_2(12);
     return 0;
 }

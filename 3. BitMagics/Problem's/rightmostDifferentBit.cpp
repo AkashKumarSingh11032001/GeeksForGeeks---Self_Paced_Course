@@ -7,7 +7,9 @@ using namespace std;
 int rightmostDifferentBit(int m, int n){
 
     int xor_val = (m^n);
-    return log(n & -(n-1));
+    if (n == 0)
+        return 0;
+    return log2(n & -n) + 1;
 }
 int main()
 {
