@@ -3,19 +3,19 @@
 
 using namespace std;
 
-int firstSetBit(int n){
+int firstSetBit(int n)
+{
     int mask = 1;
     int counter = 1;
 
     while (n)
     {
         /* code */
-        if(n & mask)
+        if (n & mask)
             return counter;
         n = n >> 1;
         counter++;
     }
-    
 }
 int main()
 {
