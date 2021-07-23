@@ -12,9 +12,8 @@ int main()
         cout << n;
     if (rem == 1)
         cout << 1;
-    if(rem == 2)
-        cout << n+1;
-    if(rem == 3)
+    if (rem == 2)
+        cout << n + 1;
+    if (rem == 3)
         cout << 0;
-    
 }
