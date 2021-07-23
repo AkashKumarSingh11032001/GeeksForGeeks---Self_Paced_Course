@@ -13,6 +13,8 @@ void leftShiftBitwise(int x)
     int z = (x << y); // ---> Left Shift y bit
     cout << z << endl;
 }
+
+// ---> (x >> y) equilvalent to (floor(x/2^y))
 void rightShiftBitwise(int x)
 {
 
