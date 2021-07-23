@@ -18,7 +18,7 @@ int firstSetBit_1(int n)
     }
 }
 unsigned int firstSetBit_2(int n){
-    return log2(n & -n) + 1;
+    return log2(n & -n)+1;
 }
 int main()
 {
