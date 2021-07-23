@@ -12,8 +12,19 @@ void leftShiftBitwise(int x){
     cout << z <<endl;
 
 }
+void rightShiftBitwise(int x){
+
+    cout << (x >> 1) <<endl; // ---> Left Shift 1 bit
+    cout << (x >> 2) <<endl; // ---> Left Shift 2 bit
+    int y = 4;
+    int z = (x >> y); // ---> Left Shift y bit
+    cout << z <<endl;
+
+}
 int main()
 {
-    shiftBitwise(3);
+    leftShiftBitwise(3);
+    cout << "******" <<endl;
+    rightShiftBitwise(3);
     return 0;
 }
