@@ -1,5 +1,6 @@
 // brianKerningamAlgorithm.cpp
 // ---> Count set bit( i.e count number of 1 in a binary representation of a number)
+// T.C = O(count of set bit)
 
 #include <bits/stdc++.h>
 
