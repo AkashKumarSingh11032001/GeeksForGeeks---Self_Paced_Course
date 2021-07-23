@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// ---> (x << y) equilvalent to (x*2^y)
 void leftShiftBitwise(int x)
 {
 
