@@ -17,7 +17,7 @@ void signed_bitwiseNOT(int x){
 int main()
 {
     unsigned_bitwiseNOT(5);
-    cout << "*****";
+    cout << "*****" <<endl;
     signed_bitwiseNOT(5);
     return 0;
 }
