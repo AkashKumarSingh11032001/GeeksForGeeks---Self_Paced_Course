@@ -1,5 +1,5 @@
 // brianKerningamAlgorithm.cpp
-// ---> Count set bit
+// ---> Count set bit( i.e count number of 1 in a binary representation of a number)
 
 #include <bits/stdc++.h>
 
