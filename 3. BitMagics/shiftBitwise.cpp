@@ -14,10 +14,10 @@ void leftShiftBitwise(int x){
 }
 void rightShiftBitwise(int x){
 
-    cout << (x >> 1) <<endl; // ---> Left Shift 1 bit
-    cout << (x >> 2) <<endl; // ---> Left Shift 2 bit
+    cout << (x >> 1) <<endl; // ---> right Shift 1 bit
+    cout << (x >> 2) <<endl; // ---> right Shift 2 bit
     int y = 4;
-    int z = (x >> y); // ---> Left Shift y bit
+    int z = (x >> y); // ---> right Shift y bit
     cout << z <<endl;
 
 }
