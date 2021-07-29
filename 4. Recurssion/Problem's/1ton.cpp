@@ -2,11 +2,11 @@
 
 using namespace std;
 
-
-int printnum(int x){
-    if(x == 0)
+int printnum(int x)
+{
+    if (x == 0)
         return x;
-    printnum(x-1);
+    printnum(x - 1);
     cout << x << " ";
 }
 int main()
