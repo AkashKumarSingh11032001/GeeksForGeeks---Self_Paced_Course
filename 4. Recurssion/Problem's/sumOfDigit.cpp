@@ -4,13 +4,14 @@
 
 using namespace std;
 
-int sumOf(int n){
-    if(n == 0)
+int sumOf(int n)
+{
+    if (n == 0)
         return n;
 
-    int res = n%10;
+    int res = n % 10;
 
-    return (res + sumOf(n/10));
+    return (res + sumOf(n / 10));
 }
 int main()
 {
