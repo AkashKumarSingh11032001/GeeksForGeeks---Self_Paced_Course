@@ -9,11 +9,11 @@ using namespace std;
 void TOH(int n,int A, int B,int C){
 
     if(n==1){
-        cout << "move from poll" << A << "to" << C <<endl; 
+        cout << "move " << n << " from " << A << " to " << C <<endl; 
     }
 
     TOH(n-1,A,C,B);
-    cout << "move from poll" << A << "to" << C << "Using" << B <<  endl;
+    cout << " move " << n << " from " << A << " to " << C << " Using " << B <<  endl;
     TOH(n-1,B,A,C); 
 } 
 
